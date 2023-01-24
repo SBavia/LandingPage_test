@@ -4,14 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Portal</title>
+    <title>Explore the beauty of the World</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo">
+                    <img src="icons/logo.png" alt="logo">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="list__item">
+                            <a href="#" class="item__link">How It Works</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link">Plan Your Trip</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link">Destinations</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="item__link">Travel Stories</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn btn-small">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="preview">
+            <div class="container">
+                <div class="preview__wrapper">
+                    <h1 class="preview__header">Explore the beauty of the World</h1>
+                    <h2 class="preview__subheader">Receive personalized recommendations for countries, hotels, activities and more</h2>
+                    <form class="preview__form" action="#">
+                        <div>
+                            <input type="text" placeholder="What would you like to do?">
+                            <button class="btn">Start Planning</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
