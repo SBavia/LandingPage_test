@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore the beauty of the World</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
@@ -17,21 +18,21 @@
         <div class="container">
             <div class="header__wrapper">
                 <a href="/" class="header__logo">
-                    <img src="icons/logo.png" alt="logo">
+                    <img src="icons/logo.svg" alt="logo">
                 </a>
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="list__item">
-                            <a href="#" class="item__link">How It Works</a>
+                            <a href="#how_it_works" class="item__link">How It Works</a>
                         </li>
                         <li class="list__item">
-                            <a href="#" class="item__link">Plan Your Trip</a>
+                            <a href="#plan" class="item__link">Plan Your Trip</a>
                         </li>
                         <li class="list__item">
-                            <a href="#" class="item__link">Destinations</a>
+                            <a href="#destinations" class="item__link">Destinations</a>
                         </li>
                         <li class="list__item">
-                            <a href="#" class="item__link">Travel Stories</a>
+                            <a href="#stories" class="item__link">Travel Stories</a>
                         </li>
                     </ul>
                 </nav>
@@ -41,7 +42,7 @@
     </header>
 
     <main class="main">
-        <section class="preview">
+        <section class="preview" id="plan">
             <div class="container">
                 <div class="preview__wrapper">
                     <h1 class="preview__header">Explore the beauty of the World</h1>
@@ -56,7 +57,7 @@
             </div>
         </section>
 
-        <section class="steps">
+        <section class="steps" id="how_it_works">
             <div class="container">
                 <h2 class="title">3 STEPS TO THE PERFECT TRIP</h2>
                 <ul class="steps__list">
@@ -82,7 +83,7 @@
             </div>
         </section>
 
-        <section class="destinations">
+        <section class="destinations" id="destinations">
             <h2 class="title">POPULAR DESTINATIONS</h2>
             <div class="destinations__wrapper">
                 <div class="carousel">
@@ -106,12 +107,12 @@
                 <div class="dot"></div>
             </div>
             <button class="btn btn-center">
-                <img src="icons/arrow-right.png" alt="arrow-right">
+                <img src="icons/arrow_right.svg" alt="arrow-right">
                 Find More
             </button>
         </section>
 
-        <section class="stories">
+        <section class="stories" id="stories">
             <h2 class="title">TRAVEL STORIES</h2>
             <div class="stories__wrapper">
                 <div class="stories__overlay">
@@ -145,14 +146,38 @@
                             </div>
                         </div>
                         <button class="btn btn-center">
-                            <img src="icons/arrow-right.png" alt="arrow-right">
+                            <img src="icons/arrow_right.svg" alt="arrow-right">
                             See More
                         </button>
-        
-                        
                     </div>
                 </div>
-                <footer class="footer"></footer>
+
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__wrapper">
+                            <div class="footer__rights">All Rights Reserved © Travel Portal</div>
+                            <div class="footer__social">
+                                <ul>
+                                    <li class="footer__social-item">
+                                        <a href="#">
+                                            <img src="icons/socials/instagram.svg" alt="instagram">
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#">
+                                            <img src="icons/socials/youtube.svg" alt="youtube">
+                                        </a>
+                                    </li>
+                                    <li class="footer__social-item">
+                                        <a href="#">
+                                            <img src="icons/socials/twitter.svg" alt="twitter">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </section>
     </main>
