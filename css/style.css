@@ -58,7 +58,7 @@
   line-height: 29px;
   border: none;
   width: 560px;
-  color: rgb(242, 120, 92);
+  color: #F2785C;
   outline: none;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -145,6 +145,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  margin-top: 40px;
   padding: 0 30px 0 30px;
 }
 
@@ -216,9 +217,23 @@
   overflow: hidden;
 }
 .carousel > div {
+  position: relative;
   width: 800px;
   height: 800px;
   margin-right: 60px;
+}
+.carousel > div img {
+  border-radius: 16px;
+}
+.carousel > div .location {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  font-family: "Red Hat Text";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
 }
 .carousel > div:last-child {
   margin-right: 0;
@@ -232,7 +247,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
 }
 .dots .dot {
   width: 20px;
@@ -244,4 +258,58 @@
 }
 .dots .active {
   background: rgb(242, 120, 92);
+}
+
+.stories {
+  min-height: 1330px;
+  margin-top: 80px;
+}
+.stories__wrapper {
+  margin-top: 40px;
+  background: url(../img/bg/footer_bg.jpg) center center/cover no-repeat;
+}
+.stories__overlay {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px 0;
+}
+.stories__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.stories__item:last-child {
+  margin-bottom: 0;
+}
+.stories__img {
+  -webkit-filter: drop-shadow(0px 4px 4px #0D606F);
+          filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+  margin-right: 40px;
+}
+.stories__text {
+  font-family: "Aleo";
+  font-weight: 400;
+  color: #0D606F;
+}
+.stories__subtitle {
+  font-size: 35px;
+  line-height: 42px;
+}
+.stories__descr {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.stories__descr span {
+  font-weight: 700;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer {
+  min-height: 60px;
 }/*# sourceMappingURL=style.css.map */
