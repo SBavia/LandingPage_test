@@ -134,10 +134,22 @@
   font-size: 16px;
   line-height: 21px;
 }
+.btn-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 0 30px 0 30px;
+}
 
 .steps {
   margin-top: 80px;
-  min-height: 500px;
 }
 .steps__list {
   margin-top: 40px;
@@ -183,4 +195,53 @@
   line-height: 53px;
   color: #F2785C;
   text-align: center;
+}
+
+.destinations {
+  margin-top: 100px;
+  position: relative;
+}
+.destinations__wrapper {
+  margin: 0 auto;
+}
+
+.carousel {
+  margin-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+.carousel > div {
+  width: 800px;
+  height: 800px;
+  margin-right: 60px;
+}
+.carousel > div:last-child {
+  margin-right: 0;
+}
+
+.dots {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+.dots .dot {
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 0.5);
+  border-radius: 100%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.dots .active {
+  background: rgb(242, 120, 92);
 }/*# sourceMappingURL=style.css.map */
