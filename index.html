@@ -21,29 +21,40 @@
                     <img src="icons/logo.svg" alt="logo" class="header__logo__img">
                     <img src="icons/logo_mobile.svg" alt="logo_mobile" class="header__logo__img_mobile">
                 </a>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="list__item">
-                            <a href="#how_it_works" class="item__link">How It Works</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#plan" class="item__link">Plan Your Trip</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#destinations" class="item__link">Destinations</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="#stories" class="item__link">Travel Stories</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="menu">
+                    <nav class="nav">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#how_it_works" class="menu__link">How It Works</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#plan" class="menu__link">Plan Your Trip</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#destinations" class="menu__link">Destinations</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#stories" class="menu__link">Travel Stories</a>
+                            </li>
+                            <li class="menu__item mobile">
+                                <a href="#" class="menu__link">Account</a>
+                            </li>
+                            <li class="menu__item mobile">
+                                <a href="#socials" class="menu__link">Social Media</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu__close">
+                        <img src="icons/close.svg" alt="close">
+                    </div>
+                </div>
                 <button class="btn btn-small">Login</button>
             </div>
-        </div>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
@@ -96,7 +107,7 @@
             <h2 class="title">POPULAR DESTINATIONS</h2>
             <div class="destinations__wrapper">
                 <div class="carousel">
-                    <div>
+                    <div class="active">
                         <img src="img/destinations/spain.jpg" alt="spain" class="desktop">
                         <img src="img/destinations/spain_mobile.jpg" alt="spain_mobile" class="mobile">
                         <div class="location">SPAIN</div>
@@ -135,7 +146,8 @@
                             <img src="img/stoties/thailand_mobile.jpg" alt="thailand_mobile" class="stories__img_mobile">
                             <div class="stories__text">
                                 <div class="stories__subtitle">10 Photos of Attractive Thailand</div>
-                                <p class="stories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><span>Read More</span></p>
+                                <p class="stories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                <div class="stories__more">Read More</div>
                             </div>
                         </div>
                         <div class="stories__item">
@@ -143,7 +155,8 @@
                             <img src="img/stoties/utah_mobile.jpg" alt="utah_mobile" class="stories__img_mobile">
                             <div class="stories__text">
                                 <div class="stories__subtitle">Canyonlands National Park, Utah</div>
-                                <p class="stories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><span>Read More</span></p>
+                                <p class="stories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                <div class="stories__more">Read More</div>
                             </div>
                         </div>
                         <div class="stories__item">
@@ -151,7 +164,8 @@
                             <img src="img/stoties/mountains_mobile.jpg" alt="mountains_mobile" class="stories__img_mobile">
                             <div class="stories__text">
                                 <div class="stories__subtitle">I left my heart in the Mountains!</div>
-                                <p class="stories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><span>Read More</span></p>
+                                <p class="stories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                <div class="stories__more">Read More</div>
                             </div>
                         </div>
                         <div class="stories__item">
@@ -159,7 +173,8 @@
                             <img src="img/stoties/car_mobile.jpg" alt="car_mobile" class="stories__img_mobile">
                             <div class="stories__text">
                                 <div class="stories__subtitle">The Longest journey in my life!</div>
-                                <p class="stories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br><span>Read More</span></p>
+                                <p class="stories__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                <div class="stories__more">Read More</div>
                             </div>
                         </div>
                         <button class="btn btn-center">
@@ -174,7 +189,7 @@
                     <div class="container">
                         <div class="footer__wrapper">
                             <div class="footer__rights">All Rights Reserved © Travel Portal</div>
-                            <div class="footer__social">
+                            <div class="footer__social" id="socials">
                                 <ul>
                                     <li class="footer__social-item">
                                         <a href="#">
@@ -204,5 +219,6 @@
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 </html>
