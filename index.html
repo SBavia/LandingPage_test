@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -36,7 +35,7 @@
                             <li class="menu__item">
                                 <a href="#stories" class="menu__link">Travel Stories</a>
                             </li>
-                            <li class="menu__item mobile">
+                            <li data-modal="sign-in" class="menu__item mobile">
                                 <a href="#" class="menu__link">Account</a>
                             </li>
                             <li class="menu__item mobile">
@@ -48,7 +47,7 @@
                         <img src="icons/close.svg" alt="close">
                     </div>
                 </div>
-                <button class="btn btn-small">Login</button>
+                <button data-modal="sign-in" class="btn btn-small">Login</button>
             </div>
             <div class="hamburger">
                 <span></span>
@@ -107,17 +106,17 @@
             <h2 class="title">POPULAR DESTINATIONS</h2>
             <div class="destinations__wrapper">
                 <div class="carousel">
-                    <div class="active">
+                    <div class="slide active">
                         <img src="img/destinations/spain.jpg" alt="spain" class="desktop">
                         <img src="img/destinations/spain_mobile.jpg" alt="spain_mobile" class="mobile">
                         <div class="location">SPAIN</div>
                     </div>
-                    <div>
+                    <div class="slide">
                         <img src="img/destinations/japan.jpg" alt="japan" class="desktop">
                         <img src="img/destinations/japan_mobile.jpg" alt="japan_mobile" class="mobile">
                         <div class="location">JAPAN</div>
                     </div>
-                    <div>
+                    <div class="slide">
                         <img src="img/destinations/usa.jpg" alt="usa" class="desktop">
                         <img src="img/destinations/usa_mobile.jpg" alt="usa_mobile" class="mobile">
                         <div class="location">USA</div>
@@ -125,9 +124,9 @@
                 </div>
             </div>
             <div class="dots">
-                <div class="dot"></div>
+                <div class="dot prev"></div>
                 <div class="dot active"></div>
-                <div class="dot"></div>
+                <div class="dot next"></div>
             </div>
             <button class="btn btn-center">
                 <img src="icons/arrow_right.svg" alt="arrow-right" class="desktop">
@@ -215,10 +214,44 @@
         </section>
     </main>
 
-    
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script> -->
+    <div class="overlay">
+        <div class="modal" id="sign-in">
+            <div class="modal__title">Log in to your account</div>
+            <button class="btn btn_sign-in btn_sign-in_facebook">
+                <img src="icons/modal/facebook_logo.svg" alt="facebook_logo">
+                Sign In with Facebook
+            </button>
+            <button class="btn btn_sign-in btn_sign-in_google">
+                <img src="icons/modal/google_logo.svg" alt="google_logo">
+                Sign In with Google
+            </button>
+            <div><div class="modal__divider">or</div></div>
+            <form action="#">
+                <label for="sign-in-email" class="label label-email">E-mail</label>
+                <input id="sign-in-email" required name="email" type="email" class="modal__input">
+                <label for="sign-in-password" class="label label-password">Password</label>
+                <input id="sign-in-password" required  name="password" type="password" class="modal__input">
+                <button class="btn btn_sign-in btn_sign-in_submit">Sign In</button>
+            </form>
+            <div class="modal__forgot">Forgot Your Password?</div>
+            <div class="modal__divider modal__divider_full"></div>
+            <div class="modal__register">Don’t have an account? <span>Register</span></div>
+        </div>
+
+        <!-- <div class="modal modal_mini" id="sign-up">
+            <div class="modal__title">Create account</div>
+            <form action="#">
+                <label for="email" class="label label-email">E-mail</label>
+                <input id="email" required name="name" type="email" class="modal__input">
+                <label for="password" class="label label-password">Password</label>
+                <input id="password" required  name="phone" type="password" class="modal__input">
+                <button class="btn btn_sign-in btn_sign-in_submit">Sign Up</button>
+            </form>
+            <div class="modal__divider_full"></div>
+            <div class="modal__register">Already have an account? <span>Log in</span></div>
+        </div> -->
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>

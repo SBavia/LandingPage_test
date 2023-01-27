@@ -71,7 +71,7 @@ html {
 .header {
   position: absolute;
   top: 0;
-  lef: 0;
+  left: 0;
   width: 100%;
   background: rgba(242, 120, 92, 0.7);
   -webkit-box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
@@ -175,6 +175,41 @@ html {
 .btn:hover {
   color: #F2785C;
 }
+.btn_sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  gap: 15px;
+  width: 560px;
+  height: 56px;
+  -webkit-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.btn_sign-in_facebook {
+  background: #1877F2;
+  margin-top: 30px;
+}
+.btn_sign-in_google {
+  background: #FFFFFF;
+  margin-top: 20px;
+  color: #0D606F;
+}
+.btn_sign-in_submit {
+  margin-top: 25px;
+}
 
 .steps {
   margin-top: 80px;
@@ -231,9 +266,15 @@ html {
 .destinations {
   margin-top: 100px;
   position: relative;
+  width: 100%;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 .destinations__wrapper {
   margin: 0 auto;
+  overflow: hidden;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 .carousel {
@@ -244,13 +285,15 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 .carousel > div {
   position: relative;
   width: 800px;
   height: 800px;
   margin-right: 60px;
+  cursor: pointer;
 }
 .carousel > div img {
   border-radius: 16px;
@@ -269,10 +312,6 @@ html {
   line-height: 42px;
   color: #FFFFFF;
 }
-.carousel > div:last-child {
-  margin-right: 0;
-}
-
 .dots {
   margin-top: 24px;
   display: -webkit-box;
@@ -289,9 +328,6 @@ html {
   border-radius: 100%;
   margin-right: 10px;
   cursor: pointer;
-}
-.dots .active {
-  background: rgb(242, 120, 92);
 }
 
 .stories {
@@ -874,4 +910,132 @@ html {
   .stories__descr {
     -webkit-line-clamp: 7;
   }
+}
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 650px;
+  min-height: 660px;
+  background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 25px 45px 23px 45px;
+  font-family: "Aleo";
+  font-style: normal;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #0D606F;
+  text-align: center;
+}
+.modal__divider {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 0.5);
+  text-align: center;
+  margin-top: 30px;
+}
+.modal__divider::before {
+  content: "";
+  display: block;
+  width: 261px;
+  height: 0px;
+  border: 1px solid rgba(13, 96, 111, 0.5);
+  position: absolute;
+  top: 267px;
+}
+.modal__divider::after {
+  content: "";
+  display: block;
+  width: 261px;
+  height: 0px;
+  border: 1px solid rgba(13, 96, 111, 0.5);
+  position: absolute;
+  top: 267px;
+  left: 344px;
+}
+.modal__divider_full {
+  width: 560px;
+  margin-top: 25px;
+  text-align: center;
+  border: 1px solid rgba(13, 96, 111, 0.5);
+  -webkit-transform: rotate(0.1deg);
+          transform: rotate(0.1deg);
+}
+.modal form {
+  margin-top: 10px;
+}
+.modal form .label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D606F;
+}
+.modal form .label-email {
+  margin-top: 10px;
+}
+.modal form .label-password {
+  margin-top: 20px;
+}
+.modal form .modal__input {
+  margin-top: 5px;
+  width: 560px;
+  height: 54px;
+  background: #FFFFFF;
+  -webkit-box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+          box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px 0 20px;
+}
+.modal__forgot {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0D606F;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  cursor: pointer;
+}
+.modal__register {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(13, 96, 111, 0.5);
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+.modal__register span {
+  color: rgb(13, 96, 111);
+  cursor: pointer;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.modal_mini {
+  min-height: 436px;
+}
+
+#sign-in {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
